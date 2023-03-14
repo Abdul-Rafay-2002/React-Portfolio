@@ -1,0 +1,6 @@
+export {default as About} from '../containers/About/About' 
+export {default as Footer} from '../containers/Footer/Footer' 
+export {default as Header} from '../containers/Header/Header' 
+export {default as Skills} from '../containers/Skills/Skills' 
+export {default as Testimonials} from '../containers/Testimonials/Testimonials' 
+export {default as Work} from '../containers/Work/Work' 
