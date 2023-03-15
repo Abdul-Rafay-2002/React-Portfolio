@@ -20,12 +20,12 @@ const Header = () => {
       <div className="content-containe">
         <div className='header-wrapper'>
           <motion.div
-            whileInView={{ x: [-100, 0], opacity: [0, 1] }}
+            whileInView={{ x: [-150, 0], opacity: [0, 1] }}
             transition={{ duration: 1 }}
             className="app__header"
           >
             <div className="app__header-badge">
-              <div>
+              <div className='app__header-bio'>
                 <h3>Hi, I'm </h3><h1>Abdul Rafay.</h1><h3> A Frontend Web Developer.</h3>
               </div>
               <motion.div

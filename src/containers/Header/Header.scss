@@ -2,7 +2,8 @@
 
 #home {
     margin-top: 130px;
-@media screen and (min-width: 1500px) {
+
+    @media screen and (min-width: 1500px) {
         margin-top: 160px;
     }
 
@@ -15,6 +16,7 @@
 
         @media screen and (max-width: 900px) {
             flex-direction: column;
+            padding-top: 50px;
         }
 
         .app__header-image {
@@ -45,6 +47,7 @@
 
         .app__header-circles {
             display: flex;
+            flex-wrap: wrap;
             gap: 10px;
             margin-top: 30px;
 
@@ -54,15 +57,24 @@
                 padding: 0.8rem 0.8rem;
                 border-radius: 440px;
                 background-color: var(--anchorHoverBGColor);
+
+                @media screen and (max-width: 660px) {
+                    width: 55px;
+                    height: 55px;
+                    padding: 0.6rem 0.6rem;
+                }
             }
 
             img {
                 width: 100%;
             }
         }
+
         @media screen and (max-width: 900px) {
             position: relative;
-            
+
         }
+
+        .app__header-bio {}
     }
 }

@@ -2,6 +2,7 @@
 
 :root {
     /*font- varients*/
+    /* Large Devices */
     --H1: 700 65px/70px 'Playfair Display', serif;
     --H2: 700 55px/48px 'Playfair Display', serif;
     --H3: 700 38px/42px 'DM Sans', sans-serif;
@@ -10,6 +11,26 @@
     --H6: 500 18px/26px 'DM Sans', sans-serif;
     --others: 400 17px/28px 'Poppins', sans-serif;
     --text-base: 400 16px/24px 'Poppins', sans-serif;
+
+    /*Tablet Devices*/
+    --H1-lg: 700 52px/58px 'Playfair Display', serif;
+    --H2-lg: 700 46px/50px 'Playfair Display', serif;
+    --H3-lg: 700 65px/42px 'DM Sans', sans-serif;
+    --H4-lg: 500 28px/32px 'DM Sans', sans-serif;
+    --H5-lg: 500 22px/27px 'DM Sans', sans-serif;
+    --H6-lg: 500 18px/26px 'DM Sans', sans-serif;
+    --others-lg: 400 17px/28px 'Poppins', sans-serif;
+    --text-base-lg: 400 16px/24px 'Poppins', sans-serif;
+
+    /*Tablet Devices*/
+    --H1-sm: 700 44px/46px 'Playfair Display', serif;
+    --H2-sm: 700 36px/44px 'Playfair Display', serif;
+    --H3-sm: 700 28px/38px 'DM Sans', sans-serif;
+    --H4-sm: 500 24px/22px 'DM Sans', sans-serif;
+    --H5-sm: 500 20px/18px 'DM Sans', sans-serif;
+    --H6-sm: 500 17px/26px 'DM Sans', sans-serif;
+    --others-sm: 400 16px/28px 'Poppins', sans-serif;
+    --text-base-sm: 400 15px/24px 'Poppins', sans-serif;
 
     /*Color plates Dark*/
     --color-primary: #000;
@@ -82,15 +103,17 @@ p {
     color: var(--text-base-color);
 }
 
-a{
+a {
     color: var(--anchorColor);
     text-decoration: none;
     outline: none;
 }
-a:hover{
+
+a:hover {
     color: var(--anchorHoverColor);
     transition: all .2s ease-in-out;
 }
+
 a,
 li {
     font: var(--others);
@@ -105,7 +128,49 @@ li {
     width: 1366px;
     margin: 0 auto;
 }
-.content-container{
+
+.content-container {
     width: 1200px;
     margin: 0 auto;
+}
+
+@media screen and (max-width:1120px) {}
+
+@media screen and (max-width:630px) {}
+
+@media screen and (max-width:660px) and (min-width: 340px) {
+    h1 {
+        font: var(--H1-sm);
+    }
+
+    h2 {
+        font: var(--H2-sm);
+    }
+
+    h3 {
+        font: var(--H3-sm);
+    }
+
+    h4 {
+        font: var(--H4-sm);
+    }
+
+    h5 {
+        font: var(--H5-sm);
+    }
+
+    h6 {
+        font: var(--H6-sm);
+    }
+
+    p {
+        font: var(--text-base-sm);
+        color: var(--text-base-color);
+    }
+
+    a {
+        color: var(--anchorColor);
+        text-decoration: none;
+        outline: none;
+    }
 }
