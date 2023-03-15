@@ -2,8 +2,8 @@
 
 :root {
     /*font- varients*/
-    --H1: 700 55px/58px 'Playfair Display', serif;
-    --H2: 700 45px/48px 'Playfair Display', serif;
+    --H1: 700 65px/70px 'Playfair Display', serif;
+    --H2: 700 55px/48px 'Playfair Display', serif;
     --H3: 700 38px/42px 'DM Sans', sans-serif;
     --H4: 500 28px/32px 'DM Sans', sans-serif;
     --H5: 500 22px/27px 'DM Sans', sans-serif;
@@ -49,6 +49,8 @@ body {
     font: 400 16px/25px 'Poppins', sans-serif;
     background-color: #030303;
     color: var(--text-base-color);
+    overflow-x: hidden;
+    outline: none;
 }
 
 h1 {
@@ -83,6 +85,7 @@ p {
 a{
     color: var(--anchorColor);
     text-decoration: none;
+    outline: none;
 }
 a:hover{
     color: var(--anchorHoverColor);
@@ -100,5 +103,9 @@ li {
 
 .container {
     width: 1366px;
+    margin: 0 auto;
+}
+.content-container{
+    width: 1200px;
     margin: 0 auto;
 }

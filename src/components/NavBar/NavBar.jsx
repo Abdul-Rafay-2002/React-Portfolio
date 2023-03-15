@@ -13,7 +13,7 @@ const NavBar = () => {
       <div className="container">
         <div className='app__navbar'>
           <div className='logo-wrapper'>
-            <img src={images.footerLogo} alt='app__logo' />
+            <a href='/'><img src={images.footerLogo} alt='app__logo' /></a>
           </div>
           <ul>
             {['home', 'work', 'skills', 'testimonials', 'about', 'contact'].map(
@@ -35,7 +35,7 @@ const NavBar = () => {
               >
                 <HiOutlineX onClick={() => setToggle(false)} />
                 <div className='mobile__logo-wrapper'>
-                  <img src={images.logo} alt='app__logo' />
+                  <a href='/'><img src={images.logo} alt='app__logo' /></a>
                 </div>
                 {['home', 'work', 'skills', 'testimonials', 'about', 'contact'].map(
                   (item) => (

@@ -46,6 +46,12 @@
         margin: 0 0.5rem;
         cursor: pointer;
         position: relative;
+
+        @media screen and (min-width: 2000px) {
+            a {
+                font-size: 1.5rem;
+            }
+        }
     }
 
     ul li a:before {
@@ -70,11 +76,13 @@
         background: var(--anchorHoverBGColor);
         border-radius: 5px;
         transition: all 0.2s ease;
+
         &:last-child a svg,
-        &:nth-last-child(2) a svg{
+        &:nth-last-child(2) a svg {
             transform: scale(1.4);
             transition: all .2s ease;
         }
+
         a {
             color: var(--anchorHoverColor);
         }
@@ -118,9 +126,10 @@
         align-items: center;
         flex-direction: column;
         background-color: #fff;
+
         @media screen and (max-width: 680px) {
             width: 100%;
-            }
+        }
 
         svg {
             position: absolute;
