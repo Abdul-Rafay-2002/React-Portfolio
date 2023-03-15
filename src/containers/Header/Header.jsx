@@ -55,11 +55,13 @@ const Header = () => {
             whileInView={{ x: [100, 0], opacity: [0, 1] }}
             transition={{ duration: 1 }}
             animate={{ scale: [1.5, .8] }}
-            className="app__header"
+            className="app__header-img"
           >
+            <motion.img src={[images.blueVector]} alt='heart-vector' className='app__header-heartTop' />
             <div className="app__header-image">
               <img src={images.main} alt='Abdul Rafay' />
             </div>
+            <motion.img src={[images.blueVector]} alt='heart-vector' className='app__header-heartBottom' />
           </motion.div>
         </div>
       </div>

@@ -133,7 +133,13 @@ li {
     width: 1200px;
     margin: 0 auto;
 }
-
+.head-text{
+    text-transform: uppercase;
+    color: var(--color-primary2);
+}
+.head-text span{
+    color: var(--color-secondary);
+}
 @media screen and (max-width:1120px) {}
 
 @media screen and (max-width:630px) {}

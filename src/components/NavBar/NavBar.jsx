@@ -23,8 +23,8 @@ const NavBar = () => {
                 </li>
               )
             )}
-            <li><a href='/'><FaGithub /></a></li>
-            <li><a href='/'><FaLinkedinIn /></a></li>
+            <li><a href='https://github.com/Abdul-Rafay-2002' target='_blank' rel='noreferrer'><FaGithub /></a></li>
+            <li><a href='https://www.linkedin.com/in/abdul-rafay-3bb521231/' target='_blank' rel="noreferrer"><FaLinkedinIn /></a></li>
           </ul>
           <div className="app__navbar-menu">
             <HiOutlineMenuAlt3 className='Open'onClick={() => setToggle(true)} />
