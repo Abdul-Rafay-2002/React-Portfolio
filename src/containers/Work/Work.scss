@@ -1,0 +1,20 @@
+@import '../../index.css';
+
+.app__work-filter{
+    margin-top: 40px;
+    text-align: center;
+    button{
+        background-color: transparent;
+        outline: none;
+        cursor: pointer;
+        padding: .3rem .5rem;
+        margin: 0 .4rem;
+        color: var(--color-primary2);
+        border: 1px solid var(--borderColor);
+        border-radius: 5px;
+    }
+    button.itemActive{
+        border: 1px solid var(--color-secondary);
+        background-color: var(--color-secondary);
+    }
+}

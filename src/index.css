@@ -36,7 +36,7 @@
     --color-primary: #000;
     --color-primary2: #fff;
     --color-secondary: #CF0A0A;
-    --text-base-color: #c9c9c9;
+    --text-base-color: #a09e9e;
     --borderColor: #b2becd;
     --headingColor: #fcfcfc;
     --anchorColor: #ddd6d6;
@@ -115,7 +115,8 @@ a:hover {
 }
 
 a,
-li {
+li,
+button {
     font: var(--others);
     text-transform: capitalize;
 }
