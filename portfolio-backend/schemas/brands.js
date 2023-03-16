@@ -4,17 +4,17 @@ export default {
     type: 'document',
     fields: [
         {
+            name: 'name',
+            title: 'Name',
+            type: 'string'
+        },
+        {
             name: 'imgUrl',
-            title: 'ImgUrl',
+            title: 'Brand Image',
             type: 'image',
             options: {
                 hotspot: true,
             },
-        },
-        {
-            name: 'name',
-            title: 'Name',
-            type: 'string'
         }
     ]
 }

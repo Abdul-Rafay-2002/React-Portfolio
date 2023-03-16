@@ -4,16 +4,15 @@ import { NavBar } from "./components/";
 import './App.scss';
 const App = () => {
   return (
-    <div className='app'>
-
-          <Header />
-          <NavBar />
-          <About />
-          <Work />
-          <Skills />
-          <Testimonials />
-          <Footer />
-        </div>
+    <>
+      <Header />
+      <NavBar />
+      <About />
+      <Work />
+      <Skills />
+      <Testimonials />
+      <Footer />
+    </>
   )
 };
 

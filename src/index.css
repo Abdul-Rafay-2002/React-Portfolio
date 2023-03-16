@@ -42,7 +42,7 @@
     --anchorColor: #ddd6d6;
     --anchorHoverColor: #fdfbfb;
     --anchorHoverBGColor: #333;
-    --box-shadow-2: 0px 0px 18px 1px rgba(167, 34, 34, 0.75);
+    --box-shadow-2: 0px 0px 10px 1px rgba(167, 34, 34, 0.75);
     --box-shadow-1: 0 3px 15px rgba(0, 0, 0, .3);
 }
 

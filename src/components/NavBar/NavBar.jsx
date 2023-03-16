@@ -16,7 +16,7 @@ const NavBar = () => {
             <a href='/'><img src={images.footerLogo} alt='app__logo' /></a>
           </div>
           <ul>
-            {['home', 'work', 'skills', 'testimonials', 'about', 'contact'].map(
+            {['home', 'about', 'work', 'skills', 'testimonials', 'contact'].map(
               (item) => (
                 <li key={`link-${item}`}>
                   <a href={`#${item}`}>{item}</a>
@@ -37,7 +37,7 @@ const NavBar = () => {
                 <div className='mobile__logo-wrapper'>
                   <a href='/'><img src={images.logo} alt='app__logo' /></a>
                 </div>
-                {['home', 'work', 'skills', 'testimonials', 'about', 'contact'].map(
+                {['home', 'about', 'work', 'skills', 'testimonials', 'contact'].map(
                   (item) => (
                     <li key={item}>
                       <a href={`#${item}`} onClick={() => setToggle(false)}>{item}</a>

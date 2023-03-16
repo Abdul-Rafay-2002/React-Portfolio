@@ -1,7 +1,8 @@
 import React from 'react';
 import './Header.scss';
+import { AppWrap } from '../../wrapper'
 import images from '../../constants/images';
-import {  motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 const scaleVariants = {
   whileInView: {
@@ -16,7 +17,7 @@ const scaleVariants = {
 
 const Header = () => {
   return (
-    <div id='home'>
+    <div className='home'>
       <div className="content-containe">
         <div className='header-wrapper'>
           <motion.div
@@ -36,16 +37,16 @@ const Header = () => {
                 {[images.html, images.css, images.javascript, images.sass, images.react].map((circle, index) => (
                   <div className="circle-cmp app__flex" key={`circle-${index}`}>
                     {/* <img src={circle} alt="profile_bg" /> */}
-                    <motion.img src={circle} alt='circles' 
-                    animate={{
-                      scale: [1, 1.1],
-                      rotate: 360,
-                      transition:{
-                        delay: 0.6,
-                        x: { duration: 1 },
-                        default: { ease: "linear" }
-                      }
-                    }} />
+                    <motion.img src={circle} alt='circles'
+                      animate={{
+                        scale: [1, 1.1],
+                        rotate: 360,
+                        transition: {
+                          delay: .5,
+                          x: { duration: 1 },
+                          default: { ease: "linear" }
+                        }
+                      }} />
                   </div>
                 ))}
               </motion.div>
@@ -57,11 +58,9 @@ const Header = () => {
             animate={{ scale: [1.5, .8] }}
             className="app__header-img"
           >
-            <motion.img src={[images.blueVector]} alt='heart-vector' className='app__header-heartTop' />
             <div className="app__header-image">
               <img src={images.main} alt='Abdul Rafay' />
             </div>
-            <motion.img src={[images.blueVector]} alt='heart-vector' className='app__header-heartBottom' />
           </motion.div>
         </div>
       </div>
@@ -69,4 +68,4 @@ const Header = () => {
   )
 };
 
-export default Header;
+export default AppWrap(Header, 'home');

@@ -12,20 +12,21 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 10px 40px 80px 0;
+        padding: 10px 50px 80px 50px;
 
         @media screen and (max-width: 900px) {
             flex-direction: column;
-            padding: 20px 0 70px 0;
+            padding: 20px 20px 70px 20px;
             text-align: center;
         }
 
         .app__header-image {
-            width: 402px;
-            height: 537px;
+            width: 400px;
+            height: 400px;
+            overflow: hidden;
 
             @media screen and (max-width:900px) {
-                margin-top: 70px;
+                margin-top: 40px;
             }
 
             img {
@@ -33,32 +34,30 @@
                 height: 100%;
                 object-fit: cover;
                 filter: grayscale(100%);
-                border-radius: 10px;
-            }
-        }
+                border-radius: 50%;
+                animation: change-shape 5s infinite alternate ease-in-out;
 
-        .app__header-img {
-            position: relative;
+                @keyframes change-shape {
+                    0% {
+                        border-radius: 40% 30% 20% 10%;
+                    }
 
-            .app__header-heartTop,
-            .app__header-heartBottom {
-                position: absolute;
-            }
+                    30% {
+                        border-radius: 60% 75% 40% 30%;
+                    }
 
-            .app__header-heartTop {
-                right: 3px;
-                top: -85px;
-                transform: rotate(180deg);
-                
-                @media screen and (max-width: 900px) {
-                    top: -15px;
+                    50% {
+                        border-radius: 25% 38% 62% 40%;
+                    }
+
+                    70% {
+                        border-radius: 40% 60% 90% 80%;
+                    }
+
+                    100% {
+                        border-radius: 100% 50% 40% 60%;
+                    }
                 }
-            }
-
-            .app__header-heartBottom {
-                bottom: -85px;
-                left: 5px;
-                z-index: -1;
             }
         }
     }
@@ -123,5 +122,3 @@
         .app__header-bio {}
     }
 }
-
-
