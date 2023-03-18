@@ -1,10 +1,15 @@
 import React from 'react';
+
 import '../Footer/Footer.scss';
 
 const Footer = () => {
   return (
-    <div>Footer</div>
+    <>
+    <div style={{textAlign: 'center', padding: '20px 0px 20px 0px', borderTop: '1px solid #444'}}>
+      <p>© {new Date().getFullYear()} All Right Reserved - React Portfolio By Rafay Dev.</p>
+    </div>
+    </>
   )
 }
 
-export default Footer
+export default Footer;

@@ -18,6 +18,10 @@
   min-height: 100vh;
   position: relative;
   padding-top: 130px;
+
+  @media screen and (min-width: 1390px) {
+      padding-top: 160px;
+  }
 }
 body::-webkit-scrollbar {
   width: 12px;
