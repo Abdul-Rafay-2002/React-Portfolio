@@ -1,1 +1,39 @@
 @import '../../index.css';
+
+.app__skills-container {
+    margin: 70px 0;
+    padding: 0 40px;
+
+    .app__skills-list {
+        display: flex;
+        justify-content: space-evenly;
+        gap: 20px;
+        flex-wrap: wrap;
+
+        .app__item {
+            .app__skills-icon {
+                width: 90px;
+                height: 90px;
+                border-radius: 100%;
+                padding: 12px;
+                object-fit: cover;
+            }
+
+            img {
+                object-fit: cover;
+                height: 100%;
+                width: 100%;
+            }
+
+            p {
+                text-align: center;
+                color: var(--color-primary2);
+                padding: 5px 8px;
+                font-weight: bold;
+                border-radius: 30px;
+                margin: 10px auto;
+                display: table;
+            }
+        }
+    }
+}
