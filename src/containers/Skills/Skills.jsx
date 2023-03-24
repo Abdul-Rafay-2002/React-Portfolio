@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Tooltip as ReactTooltip } from 'react-tooltip';
+import { BsBriefcaseFill } from 'react-icons/bs'
 import { AppWrap } from '../../wrapper';
 import './Skills.scss';
 import { motion } from 'framer-motion';
@@ -38,7 +38,7 @@ const Skills = () => {
                 className='app__skills-icon'
                 style={{
                   backgroundColor: skills.bgColor,
-                  boxShadow: `0px 0px 25px 1px ${skills.bgColor}`,
+                  boxShadow: `0px 0px 15px 1px ${skills.bgColor}`,
                 }}>
                 <img src={urlFor(skills.icon)} alt={skills.name} />
               </div>
@@ -51,35 +51,31 @@ const Skills = () => {
           {experiences?.map((experience) => (
             <motion.div className='app__skill-experience-item' key={experience.year}>
               <div className="app__skill-experience-year">
+                <div className="expereince-icon">
+                  <BsBriefcaseFill />
+                </div>
                 <p>{experience.year}</p>
               </div>
               <motion.div>
-                {experience.works.map((work) =>(
-                  <>
-                    <motion.div
-                      whileInView={{ opacity: [0, 1] }}
-                      transition={{ duration: 0.8 }}
-                      className='app__skill-experience-item'
-                      data-tip
-                      data-for={work.name}
-                      key={work.name}
-                    >
-                      <h5 className=''>{work.name}</h5>
-                      <p>{work.company}</p>
-                    </motion.div>
-                    <ReactTooltip
-                      id={work.name}
-                      effect='solid'
-                      arrowColor='#eee'
-                      className='toolTip'
-                    >
-                      {work.desc}
-                    </ReactTooltip>
-                  </> 
+                {experience.works.map((work) => (
+                  <motion.div
+                    whileInView={{ opacity: [0, 1] }}
+                    transition={{ duration: 0.8 }}
+                    className='app__skill-experience-item-head'
+                    data-tip
+                    data-for={work.name}
+                    key={work.name}
+                  >
+                    <span>
+                      <h5>{work.name}</h5>
+                      <p className='bold-text'>{work.company}</p>
+                    </span>
+                    <p>{work.desc}</p>
+                  </motion.div>
                 ))}
               </motion.div>
             </motion.div>
-          
+
           ))}
         </motion.div>
       </div>

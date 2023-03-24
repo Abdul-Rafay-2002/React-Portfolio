@@ -1,39 +1,96 @@
 @import '../../index.css';
 
 .app__skills-container {
-    margin: 70px 0;
-    padding: 0 40px;
+	margin: 70px 0;
+	padding: 0 40px;
+	display: flex;
+	justify-content: space-between;
+	gap: 40px;
 
-    .app__skills-list {
-        display: flex;
-        justify-content: space-evenly;
-        gap: 20px;
-        flex-wrap: wrap;
+	.app__skills-list {
+		display: flex;
+		justify-content: space-evenly;
+		gap: 20px;
+		flex-wrap: wrap;
 
-        .app__item {
-            .app__skills-icon {
-                width: 90px;
-                height: 90px;
-                border-radius: 100%;
-                padding: 12px;
-                object-fit: cover;
-            }
+		.app__item {
+			.app__skills-icon {
+				width: 90px;
+				height: 90px;
+				border-radius: 100%;
+				padding: 12px;
+				object-fit: cover;
+			}
 
-            img {
-                object-fit: cover;
-                height: 100%;
-                width: 100%;
-            }
+			img {
+				object-fit: cover;
+				height: 100%;
+				width: 100%;
+			}
 
-            p {
-                text-align: center;
-                color: var(--color-primary2);
-                padding: 5px 8px;
-                font-weight: bold;
-                border-radius: 30px;
-                margin: 10px auto;
-                display: table;
-            }
-        }
-    }
+			p {
+				text-align: center;
+				color: var(--color-primary2);
+				padding: 5px 8px;
+				font-weight: bold;
+				border-radius: 30px;
+				margin: 10px auto;
+				display: table;
+			}
+		}
+	}
+}
+
+.app__skill-experience-item {
+	display: flex;
+	position: relative;
+	gap: 20px;
+
+	.app__skill-experience-year {
+		p {
+			position: absolute;
+			top: -35px;
+			left: 70px;
+			background-color: var(--anchorHoverBGColor);
+			color: var(--color-primary2);
+			padding: 5px 8px;
+			border-radius: 50px;
+		}
+	}
+
+	.expereince-icon {
+		position: relative;
+		width: 50px;
+		height: 100%;
+
+		svg {
+			width: 50px;
+			height: 50px;
+			background: var(--color-secondary);
+			padding: 5px;
+			border-radius: 100%;
+			color: var(--color-primary);
+		}
+
+		&::before {
+			content: "";
+			position: absolute;
+			display: block;
+			width: 1px;
+			top: 0;
+			height: 50px;
+			background-color: #444;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			margin: auto;
+			z-index: -1;
+		}
+	}
+	.app__skill-experience-item-head{
+		h5{
+			font-weight: bold;
+			text-transform: uppercase;
+		}
+	}
 }
