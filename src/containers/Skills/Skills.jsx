@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { BsBriefcaseFill } from 'react-icons/bs'
+import { BsChatSquareFill } from 'react-icons/bs'
 import { AppWrap } from '../../wrapper';
 import './Skills.scss';
 import { motion } from 'framer-motion';
@@ -52,7 +52,7 @@ const Skills = () => {
             <motion.div className='app__skill-experience-item' key={experience.year}>
               <div className="app__skill-experience-year">
                 <div className="expereince-icon">
-                  <BsBriefcaseFill />
+                  <BsChatSquareFill />
                 </div>
                 <p>{experience.year}</p>
               </div>
@@ -67,8 +67,7 @@ const Skills = () => {
                     key={work.name}
                   >
                     <span>
-                      <h5>{work.name}</h5>
-                      <p className='bold-text'>{work.company}</p>
+                      <h5>{work.name}</h5> - <p className='bold-text'>{work.company}</p>
                     </span>
                     <p>{work.desc}</p>
                   </motion.div>

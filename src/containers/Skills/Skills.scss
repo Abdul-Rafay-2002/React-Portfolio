@@ -14,6 +14,7 @@
 		flex-wrap: wrap;
 
 		.app__item {
+			width: 100px;
 			.app__skills-icon {
 				width: 90px;
 				height: 90px;
@@ -49,8 +50,8 @@
 	.app__skill-experience-year {
 		p {
 			position: absolute;
-			top: -35px;
-			left: 70px;
+			top: 0px;
+			left: 78px;
 			background-color: var(--anchorHoverBGColor);
 			color: var(--color-primary2);
 			padding: 5px 8px;
@@ -69,7 +70,7 @@
 			background: var(--color-secondary);
 			padding: 5px;
 			border-radius: 100%;
-			color: var(--color-primary);
+			color: var(--color-primary2);
 		}
 
 		&::before {
@@ -78,7 +79,7 @@
 			display: block;
 			width: 1px;
 			top: 0;
-			height: 50px;
+			height: 100%;
 			background-color: #444;
 			bottom: 0;
 			left: 0;
@@ -88,9 +89,21 @@
 		}
 	}
 	.app__skill-experience-item-head{
+		margin-top: 45px;
+		span{
+			display: flex;
+			align-items: center;
+			color: var(--color-primary2);
+		}
 		h5{
+			margin: 0 10px;
 			font-weight: bold;
 			text-transform: uppercase;
+			margin: 0 10px;
+		}
+		p{
+			margin: 0 10px;
+			text-transform: capitalize;
 		}
 	}
 }
