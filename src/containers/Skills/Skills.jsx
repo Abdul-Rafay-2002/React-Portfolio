@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { BsChatSquareFill } from 'react-icons/bs'
+import { BsChatSquareQuoteFill } from 'react-icons/bs'
 import { AppWrap } from '../../wrapper';
 import './Skills.scss';
 import { motion } from 'framer-motion';
@@ -22,7 +22,7 @@ const Skills = () => {
     });
   }, []);
   return (
-    <>
+    <div className='app__skills-wrapper'>
       <h2 className='head-text'>
         My <span>Skills</span> & <span>Experience</span>
       </h2>
@@ -52,7 +52,7 @@ const Skills = () => {
             <motion.div className='app__skill-experience-item' key={experience.year}>
               <div className="app__skill-experience-year">
                 <div className="expereince-icon">
-                  <BsChatSquareFill />
+                  <BsChatSquareQuoteFill />
                 </div>
                 <p>{experience.year}</p>
               </div>
@@ -67,7 +67,7 @@ const Skills = () => {
                     key={work.name}
                   >
                     <span>
-                      <h5>{work.name}</h5> - <p className='bold-text'>{work.company}</p>
+                      <h5>{work.name}</h5> - <p>{work.company}</p>
                     </span>
                     <p>{work.desc}</p>
                   </motion.div>
@@ -78,7 +78,7 @@ const Skills = () => {
           ))}
         </motion.div>
       </div>
-    </>
+    </div>
   );
 };
 

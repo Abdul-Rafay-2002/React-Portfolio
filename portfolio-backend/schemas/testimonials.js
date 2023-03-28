@@ -21,19 +21,13 @@ export default {
         hotspot: true,
       },
     },
-        {
-            name: 'tags',
-            title: 'Tags',
-            type: 'array',
-            of: [
-                {
-                    type: 'block'
-                },
-                {
-                    type: 'image'
-                }
-            ]
-        },
-
-    ],
+      {
+        name: 'feedback',
+        title: 'Feedback',
+        type: 'string'
+      }
+    ]
 };
+
+
+

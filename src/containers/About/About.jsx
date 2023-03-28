@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import {AppWrap} from '../../wrapper';
+import { AppWrap } from '../../wrapper';
 import { motion } from 'framer-motion';
 import { client, urlFor } from '../../client'
 import './About.scss';

@@ -36,6 +36,7 @@
     --color-primary: #000;
     --color-primary2: #fff;
     --color-secondary: #CF0A0A;
+    --color-secondary2: #444;
     --text-base-color: #a09e9e;
     --borderColor: #b2becd;
     --headingColor: #fcfcfc;
@@ -137,6 +138,7 @@ li {
 .head-text{
     text-transform: uppercase;
     color: var(--color-primary2);
+    padding: 0 20px;
 }
 .head-text span{
     color: var(--color-secondary);
