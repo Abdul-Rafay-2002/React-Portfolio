@@ -5,30 +5,30 @@
     /* Large Devices */
     --H1: 700 65px/70px 'Playfair Display', serif;
     --H2: 700 55px/48px 'Playfair Display', serif;
-    --H3: 700 38px/42px 'DM Sans', sans-serif;
-    --H4: 500 28px/32px 'DM Sans', sans-serif;
-    --H5: 500 22px/27px 'DM Sans', sans-serif;
-    --H6: 500 18px/26px 'DM Sans', sans-serif;
+    --H3: 700 38px/42px 'Poppins', sans-serif;;
+    --H4: 500 28px/32px 'Poppins', sans-serif;;
+    --H5: 500 22px/27px 'Poppins', sans-serif;;
+    --H6: 500 18px/26px 'Poppins', sans-serif;
     --others: 400 17px/28px 'Poppins', sans-serif;
     --text-base: 400 16px/24px 'Poppins', sans-serif;
 
     /*Tablet Devices*/
     --H1-lg: 700 52px/58px 'Playfair Display', serif;
     --H2-lg: 700 46px/50px 'Playfair Display', serif;
-    --H3-lg: 700 65px/42px 'DM Sans', sans-serif;
-    --H4-lg: 500 28px/32px 'DM Sans', sans-serif;
-    --H5-lg: 500 22px/27px 'DM Sans', sans-serif;
-    --H6-lg: 500 18px/26px 'DM Sans', sans-serif;
+    --H3-lg: 700 65px/42px 'Poppins', sans-serif;;
+    --H4-lg: 500 28px/32px 'Poppins', sans-serif;;
+    --H5-lg: 500 22px/27px 'Poppins', sans-serif;;
+    --H6-lg: 500 18px/26px 'Poppins', sans-serif;;
     --others-lg: 400 17px/28px 'Poppins', sans-serif;
     --text-base-lg: 400 16px/24px 'Poppins', sans-serif;
 
     /*Tablet Devices*/
     --H1-sm: 700 44px/46px 'Playfair Display', serif;
     --H2-sm: 700 36px/44px 'Playfair Display', serif;
-    --H3-sm: 700 28px/38px 'DM Sans', sans-serif;
-    --H4-sm: 500 24px/22px 'DM Sans', sans-serif;
-    --H5-sm: 500 20px/18px 'DM Sans', sans-serif;
-    --H6-sm: 500 17px/26px 'DM Sans', sans-serif;
+    --H3-sm: 700 28px/38px 'Poppins', sans-serif;;
+    --H4-sm: 500 24px/22px 'Poppins', sans-serif;;
+    --H5-sm: 500 20px/18px 'Poppins', sans-serif;;
+    --H6-sm: 500 17px/26px 'Poppins', sans-serif;;
     --others-sm: 400 16px/28px 'Poppins', sans-serif;
     --text-base-sm: 400 15px/24px 'Poppins', sans-serif;
 
@@ -44,7 +44,7 @@
     --anchorHoverColor: #fdfbfb;
     --anchorHoverBGColor: #333;
     --box-shadow-2: 0px 0px 10px 1px rgba(167, 34, 34, 0.75);
-    --box-shadow-1: 0 0px 15px rgba(255, 255, 255, 0.712);
+    --box-shadow-1: 0px 0px 15px 10px rgba(43, 44, 52, 0.712);
 }
 
 /*Color plates light*/

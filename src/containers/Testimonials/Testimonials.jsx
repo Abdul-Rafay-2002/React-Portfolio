@@ -53,7 +53,7 @@ const Testimonials = () => {
               </div>
               <div className="app__testimonials-item-content">
                 <p>{testimonials[currentIndex].feedback}</p>
-                <h4>{test.name}</h4>
+                <h5>{test.name}</h5>
                 <h6>{test.company}</h6>
               </div>
             </div>
@@ -66,19 +66,7 @@ const Testimonials = () => {
         </>
       )}
       <div className='app__brands-items'>
-        {/* {brands.map((brand) => (
-          <motion.div
-            whileInView={{ opacity: [0, 1] }}
-            transition={{ duration: .6, type: 'tween' }}
-            key={brand._id}
-            className='app__brands-img'
-          >
-            <img src={urlFor(brand.imgUrl)} alt={brand.name} />
-          </motion.div>
-        ))} */}
-
-
-        <Swiper
+       <Swiper
           spaceBetween={10}
           breakpoints={{ breakpoints }}
           slidesPerView={3}
