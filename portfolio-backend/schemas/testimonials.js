@@ -24,7 +24,7 @@ export default {
       {
         name: 'feedback',
         title: 'Feedback',
-        type: 'string'
+        type: 'text'
       }
     ]
 };

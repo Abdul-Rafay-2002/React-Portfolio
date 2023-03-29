@@ -4,11 +4,9 @@ import { BsFillArrowLeftCircleFill, BsFillArrowRightCircleFill } from 'react-ico
 import { urlFor, client } from '../../client';
 import { AppWrap } from '../../wrapper';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { EffectFade } from 'swiper';
 
 // Import Swiper styles
 import 'swiper/css';
-import 'swiper/css/effect-fade';
 import '../Testimonials/Testimonials.scss';
 
 const Testimonials = () => {
@@ -28,7 +26,17 @@ const Testimonials = () => {
       setTestimonials(data);
     });
   }, []);
+
   const test = testimonials[currentIndex]
+  const breakpoints = {
+    450: {
+      slidesPerView: 1,
+    },
+    930: {
+      slidesPerView: 2,
+    },
+    // more breakpoints if needed
+  };
 
   const arrowHandler = (index) => {
     setCurrentIndex(index);
@@ -41,7 +49,7 @@ const Testimonials = () => {
           <div className='app_testimonials'>
             <div className="app__testimonials-item">
               <div className="app__testimonials-item-img">
-                <img src={urlFor(testimonials[currentIndex].imageurl)} alt={testimonials[currentIndex].name} />
+                <img src={urlFor(test.imageurl)} alt={test.name} />
               </div>
               <div className="app__testimonials-item-content">
                 <p>{testimonials[currentIndex].feedback}</p>
@@ -52,8 +60,8 @@ const Testimonials = () => {
           </div>
           <div className="app_testimonials-arrows">
             <div className="app_testimonials-btn"></div>
-            <button className="app_testimonials-btn" onClick={() => arrowHandler(currentIndex === 0 ? testimonials.lenght - 1 : currentIndex - 1)}><BsFillArrowLeftCircleFill /></button>
-            <button className="app_testimonials-btn" onClick={() => arrowHandler(currentIndex === testimonials.lenght - 1 ? 0 : currentIndex + 1)}><BsFillArrowRightCircleFill /></button>
+            <button className="app_testimonials-btn" onClick={() => arrowHandler(currentIndex === 0 ? testimonials.length - 1 : currentIndex - 1)}><BsFillArrowLeftCircleFill /></button>
+            <button className="app_testimonials-btn" onClick={() => arrowHandler(currentIndex === testimonials.length - 1 ? 0 : currentIndex + 1)}><BsFillArrowRightCircleFill /></button>
           </div>
         </>
       )}
@@ -72,14 +80,10 @@ const Testimonials = () => {
 
         <Swiper
           spaceBetween={10}
+          breakpoints={{ breakpoints }}
           slidesPerView={3}
           loop={true}
-          autoplay={{ delay: 1000, disableOnInteraction: false }}
           speed={800}
-          modules={[EffectFade]} effect="fade"
-          // set number of slides to load dynamically
-          preloadImages={true}
-          updateOnImagesReady={true}
         >
           {brands.map((brand) => (
             <SwiperSlide key={brand._id}>

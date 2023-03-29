@@ -1,1 +1,152 @@
 @import '../../index.css';
+
+.app__contact-cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 60px auto 20px auto;
+    width: 865px;
+
+    @media screen and (max-width: 900px) {
+        width: 95%;
+    }
+
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+        margin: 60px auto;
+    }
+
+    .app__contact-card {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        background-color: var(--color-secondary2);
+        padding: 5px 20px;
+        border-radius: 10px;
+        width: 50%;
+        margin: 0px 8px;
+
+        @media screen and (max-width: 768px) {
+            width: 100%;
+            justify-content: flex-start;
+            margin: 15px 0;
+        }
+
+        @media screen and (max-width: 460px) {
+            flex-direction: column;
+            padding-bottom: 20px;
+        }
+
+
+        img {
+            width: 70px;
+            height: 70px;
+
+            @media screen and (max-width: 640px) {
+                width: 120px;
+                height: 120px;
+            }
+        }
+
+        a {
+            text-transform: lowercase;
+        }
+    }
+}
+
+.app__contact-form {
+    width: 850px;
+    margin: 0 auto 60px auto;
+
+    @media screen and (max-width: 900px) {
+        width: 90%;
+    }
+
+    .app__contact-form-head {
+        display: flex;
+        justify-content: space-between;
+        @media screen and (max-width:600px) {
+                flex-direction: column;
+                gap: 20px;
+            }
+        input {
+            width: 49%;
+            height: 45px;
+            outline: none;
+            padding: 0 10px;
+            border-radius: 6px;
+            background-color: var(--color-secondary2);
+            border: 1px solid var(--color-secondary2);
+            color: var(--anchorColor);
+            @media screen and (max-width:600px) {
+                    width: 100%;
+                }
+        }
+    }
+
+    .app__contact-form-body {
+        display: flex;
+        flex-direction: column;
+
+        textarea {
+            background-color: var(--color-secondary2);
+            outline: none;
+            padding: 10px;
+            width: 100%;
+            margin: 20px 0;
+            border-radius: 6px;
+            color: var(--anchorColor);
+            border: 1px solid var(--color-secondary2);
+        }
+
+        .app__contact-form-body-buttons {
+            display: flex;
+
+            @media screen and (max-width:460px) {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            button {
+                width: 200px;
+                margin: 0 auto;
+                height: 50px;
+                cursor: pointer;
+                background-color: transparent;
+                color: var(--color-primary2);
+                border: 1px solid var(--color-secondary);
+                border-radius: 40px;
+
+                @media screen and (max-width:460px) {
+                   width: 100%;
+                }
+
+                &:hover {
+                    transition: all .3s ease-in-out;
+                    background-color: var(--color-secondary);
+                    box-shadow: var(--box-shadow-2);
+                }
+            }
+
+            a {
+
+                margin: 0 auto;
+                padding: 12px 40px;
+                cursor: pointer;
+                background-color: transparent;
+                color: var(--color-primary2);
+                border: 1px solid var(--color-secondary);
+                border-radius: 40px;
+                @media screen and (max-width:460px) {
+                        width: 100%;
+                        text-align: center;
+                    }
+                &:hover {
+                    transition: all .3s ease-in-out;
+                    background-color: var(--color-secondary);
+                    box-shadow: var(--box-shadow-2);
+                }
+            }
+        }
+    }
+}

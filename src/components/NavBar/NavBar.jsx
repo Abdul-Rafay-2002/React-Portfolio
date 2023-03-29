@@ -30,7 +30,7 @@ const NavBar = () => {
             <HiOutlineMenuAlt3 className='Open'onClick={() => setToggle(true)} />
             {toggle && (
               <motion.div
-                whileInView={{ x: [300, 0] }}
+                whileInView={{ x: [0] }}
                 transition={{ duration: 0.85, ease: 'easeOut' }}
               >
                 <HiOutlineX onClick={() => setToggle(false)} />

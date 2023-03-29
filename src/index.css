@@ -44,7 +44,7 @@
     --anchorHoverColor: #fdfbfb;
     --anchorHoverBGColor: #333;
     --box-shadow-2: 0px 0px 10px 1px rgba(167, 34, 34, 0.75);
-    --box-shadow-1: 0 3px 15px rgba(0, 0, 0, .3);
+    --box-shadow-1: 0 0px 15px rgba(255, 255, 255, 0.712);
 }
 
 /*Color plates light*/
@@ -71,7 +71,7 @@ body {
     font: 400 16px/25px 'Poppins', sans-serif;
     background-color: #030303;
     color: var(--text-base-color);
-    overflow-x: hidden;
+    overflow-x: hidden !important;
     outline: none;
 }
 
@@ -99,7 +99,9 @@ h6 {
     font: var(--H6);
 }
 
-p {
+p,
+input,
+textarea {
     font: var(--text-base);
     color: var(--text-base-color);
 }

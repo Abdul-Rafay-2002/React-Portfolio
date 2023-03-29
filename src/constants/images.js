@@ -12,6 +12,8 @@ import UIUX from '../assets/ui-ux.svg';
 import WebAnimation from '../assets/WebAnimation.svg';
 import webDesign from '../assets/webDesign.svg';
 import WebDevelopment from '../assets/WebDevelopment.svg';
+import mail from '../assets/mail.svg';
+import phone from '../assets/phone.svg';
 
 const exportedObject = {
 	logo,
@@ -28,6 +30,8 @@ const exportedObject = {
 	WebAnimation,
 	webDesign,
 	WebDevelopment,
+	phone,
+	mail,
 	
 };
 export default exportedObject;
