@@ -18,6 +18,12 @@ const Contact = () => {
   const handleSubmit = () => {
     setLoading(true);
 
+    if (!formData.name || !formData.email || !formData.message) {
+      alert('Please fill in all required fields');
+      setLoading(false);
+      return;
+    }
+
     const contact = {
       _type: 'contact',
       name: formData.name,
@@ -43,7 +49,7 @@ const Contact = () => {
         </div>
         <div className="app__contact-card">
           <img src={images.phone} alt='mail' />
-          <a href="tel:0334-3667235">+92334-3667235</a>
+          <a href="tel:0319-1945099">+92319-1945099</a>
         </div>
       </div>
       {!isFormSubmmited ?
